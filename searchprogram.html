@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Programs | Student Recruitment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-6 text-center">
+    <h1 class="text-3xl font-bold">Search Programs</h1>
+    <p class="text-sm mt-1">Find the perfect program based on your goals</p>
+  </header>
+
+  <!-- Search Bar with Toggle -->
+  <section class="max-w-5xl mx-auto p-6 bg-white mt-6 rounded shadow">
+    <div class="flex flex-col md:flex-row gap-4">
+      <input type="text" placeholder="e.g., Business in Canada" class="flex-1 p-3 border rounded" />
+      <select class="p-3 border rounded">
+        <option value="programs">Programs</option>
+        <option value="universities">Universities</option>
+      </select>
+      <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Search</button>
+    </div>
+  </section>
+
+  <!-- Filters Section -->
+  <section class="max-w-5xl mx-auto p-6 bg-white mt-6 rounded shadow">
+    <h2 class="text-xl font-semibold mb-4">Refine Your Search</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <select class="p-3 border rounded"><option>🌍 Location</option><option>USA</option><option>UK</option><option>Canada</option></select>
+      <select class="p-3 border rounded"><option>🎓 Program Level</option><option>Bachelor’s</option><option>Master’s</option><option>Diploma</option></select>
+      <select class="p-3 border rounded"><option>🧠 Discipline</option><option>Business</option><option>Engineering</option><option>Arts</option></select>
+      <select class="p-3 border rounded"><option>📅 Duration</option><option>6 Months</option><option>1 Year</option><option>2+ Years</option></select>
+      <select class="p-3 border rounded"><option>💬 Language</option><option>English</option><option>French</option></select>
+      <select class="p-3 border rounded"><option>💸 Tuition</option><option>Under $10K</option><option>$10K–$30K</option><option>Above $30K</option></select>
+    </div>
+    <div class="mt-4 flex gap-2 text-sm text-gray-600">
+      <p>🏛️ Filter by: <span class="bg-gray-200 px-2 py-1 rounded">Public</span> <span class="bg-gray-200 px-2 py-1 rounded">English</span></p>
+      <button class="ml-auto bg-gray-100 hover:bg-gray-200 text-xs px-3 py-1 rounded">Clear All</button>
+    </div>
+  </section>
+
+  <!-- Placeholder for Search Results -->
+  <section class="max-w-5xl mx-auto p-6 mt-6">
+    <h3 class="text-lg font-semibold mb-2">Matching Results</h3>
+    <div class="bg-gray-100 p-4 rounded text-sm text-gray-500">
+      🔍 Start your search to see results here.
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
+    <p>&copy; 2025 StudentRecruit.io – All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
