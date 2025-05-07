@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Recruitment Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="bg-blue-700 text-white text-center p-10">
+    <h1 class="text-4xl font-bold mb-4">Find Your Perfect Program Abroad</h1>
+    <p class="text-lg mb-6">400+ Universities • 20,000+ Programs • Global Reach</p>
+    <button onclick="document.getElementById('search-section').scrollIntoView({ behavior: 'smooth' })" class="bg-white text-blue-700 px-6 py-3 font-semibold rounded-full hover:bg-gray-200">
+      Start Exploring Programs
+    </button>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="p-6 text-center bg-white">
+    <p class="text-sm uppercase text-gray-500 mb-4">Trusted by Top Institutions</p>
+    <div class="flex justify-center flex-wrap gap-6">
+      <img src="https://via.placeholder.com/100x40?text=Harvard" />
+      <img src="https://via.placeholder.com/100x40?text=Oxford" />
+      <img src="https://via.placeholder.com/100x40?text=Toronto" />
+      <img src="https://via.placeholder.com/100x40?text=MIT" />
+    </div>
+  </section>
+
+  <!-- Program Search Section -->
+  <section id="search-section" class="p-8 bg-white max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Search Programs or Universities</h2>
+    <div class="flex flex-col md:flex-row gap-4">
+      <input type="text" placeholder="e.g., Business programs in Canada" class="flex-1 border p-3 rounded" />
+      <select class="border p-3 rounded">
+        <option>Programs</option>
+        <option>Universities</option>
+      </select>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Search</button>
+    </div>
+  </section>
+
+  <!-- Filters Section -->
+  <section class="p-8 bg-gray-100 max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Filter Results</h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      <select class="border p-2 rounded"><option>🌍 Location</option><option>USA</option><option>UK</option><option>Canada</option></select>
+      <select class="border p-2 rounded"><option>🎓 Program Level</option><option>Bachelor’s</option><option>Master’s</option><option>Certificate</option></select>
+      <select class="border p-2 rounded"><option>🧠 Discipline</option><option>Business</option><option>Engineering</option><option>Arts</option></select>
+      <select class="border p-2 rounded"><option>📅 Duration</option><option>6 months</option><option>1 year</option><option>2 years</option></select>
+      <select class="border p-2 rounded"><option>💬 Language</option><option>English</option><option>French</option></select>
+      <select class="border p-2 rounded"><option>💸 Tuition</option><option>Under $10k</option><option>$10k–$30k</option><option>$30k+</option></select>
+    </div>
+    <p class="text-sm text-gray-600 mt-4">🏛️ Public or Private • Compare up to 3 programs</p>
+  </section>
+
+  <!-- Program Details Section -->
+  <section class="p-8 bg-white max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Program Details Preview</h2>
+    <div class="border p-6 rounded shadow bg-blue-50">
+      <h3 class="text-xl font-bold mb-2">MSc in Data Science – University of Toronto</h3>
+      <p><strong>Duration:</strong> 2 years | <strong>Tuition:</strong> $25,000/year | <strong>Language:</strong> English</p>
+      <p class="mt-2 text-sm text-gray-700">A world-class program focused on machine learning, AI, and data analytics. Ideal for students looking to enter tech and research roles globally.</p>
+      <div class="mt-4 flex gap-2">
+        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Apply Now</button>
+        <button class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Add to My Programs</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Help Section -->
+  <section class="p-8 bg-gray-100 max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Application Support & AI Advisor</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold mb-2">🎯 Checklist</h3>
+        <ul class="list-disc pl-5 text-sm text-gray-700">
+          <li>Passport copy</li>
+          <li>Transcripts</li>
+          <li>Statement of Purpose</li>
+          <li>Language proficiency (IELTS/TOEFL)</li>
+          <li>Application Fee</li>
+        </ul>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold mb-2">🤖 Ask our AI Advisor</h3>
+        <div class="border p-2 rounded h-32 text-sm text-gray-500 italic">"What is the deadline for UK Master's programs?"<br><span class="text-green-600">Answer: Most close by June 1st.</span></div>
+        <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Ask Another Question</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup / Login Section -->
+  <section class="p-8 bg-white max-w-5xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">Sign Up to Track Applications</h2>
+    <button onclick="toggleModal(true)" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Continue with Google</button>
+    <p class="text-sm mt-2 text-gray-500">or sign up with email</p>
+  </section>
+
+  <!-- Application Portal -->
+  <section class="p-8 bg-gray-100 max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Your Application Portal</h2>
+    <div class="bg-white p-6 rounded shadow text-sm">
+      <p><strong>Saved Programs:</strong> MSc Data Science, MBA – Oxford</p>
+      <p class="mt-2"><strong>Status:</strong></p>
+      <ul class="list-disc pl-5 mt-1">
+        <li>✅ Documents Uploaded</li>
+        <li>✅ Form Completed</li>
+        <li>🕓 Payment Pending</li>
+        <li>❌ Not Submitted</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+    <div class="bg-white p-6 rounded shadow w-full max-w-sm text-left">
+      <h3 class="text-xl font-bold mb-4">Create Your Account</h3>
+      <input type="text" placeholder="Full Name" class="w-full p-2 border mb-2 rounded">
+      <input type="email" placeholder="Email" class="w-full p-2 border mb-2 rounded">
+      <input type="password" placeholder="Password" class="w-full p-2 border mb-2 rounded">
+      <button class="bg-blue-600 text-white w-full py-2 rounded hover:bg-blue-700">Sign Up</button>
+      <p class="text-xs mt-3 text-gray-500 text-center">Already have an account? <span class="underline cursor-pointer">Log in</span></p>
+      <button onclick="toggleModal(false)" class="text-sm mt-4 text-gray-400 hover:underline block text-center">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleModal(show) {
+      document.getElementById('signupModal').style.display = show ? 'flex' : 'none';
+    }
+  </script>
+
+</body>
+</html>
