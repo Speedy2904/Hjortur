@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Home | StudentRecruit.io</title>
+  <title>Search | StudentRecruit.io</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800">
-  <!-- Navigation -->
+<body class="bg-gray-50 text-gray-800">
   <nav class="bg-blue-700 text-white p-4">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
       <h1 class="text-lg font-bold">StudentRecruit.io</h1>
@@ -18,13 +17,16 @@
       </div>
     </div>
   </nav>
-  <section class="text-center p-10 bg-blue-50">
-    <h2 class="text-3xl font-bold mb-2">Explore 20,000+ Programs</h2>
-    <p class="mb-4 text-gray-700">Search, compare, apply — all in one place.</p>
-    <a href="search.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Start Exploring</a>
+  <section class="max-w-5xl mx-auto p-6 bg-white mt-6 rounded shadow">
+    <h2 class="text-xl font-bold mb-4">Search for Programs or Universities</h2>
+    <div class="flex flex-col md:flex-row gap-4 mb-4">
+      <input type="text" placeholder="e.g., Business in Canada" class="flex-1 p-3 border rounded" />
+      <select class="p-3 border rounded">
+        <option>Programs</option>
+        <option>Universities</option>
+      </select>
+      <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Search</button>
+    </div>
   </section>
-  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
-    <p>&copy; 2025 StudentRecruit.io</p>
-  </footer>
 </body>
 </html>

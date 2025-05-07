@@ -2,101 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aisha's Dashboard | StudentRecruit.io</title>
+  <title>Dashboard | StudentRecruit.io</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-blue-700 text-white text-center p-6">
-    <h1 class="text-3xl font-bold">Welcome, Aisha 👋</h1>
-    <p class="text-sm mt-1">Your personalized student dashboard</p>
-  </header>
-
-  <main class="max-w-6xl mx-auto p-6 space-y-10">
-
-    <!-- Student Profile Summary -->
-    <section class="bg-white rounded shadow p-6">
-      <h2 class="text-xl font-semibold mb-4">👤 Profile Overview</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div>
-          <p><strong>Name:</strong> Aisha Rahman</p>
-          <p><strong>Email:</strong> aisha.rahman@email.com</p>
-          <p><strong>Country:</strong> Bangladesh</p>
-          <p><strong>Interested In:</strong> Data Science, Business Analytics</p>
-        </div>
-        <div>
-          <p><strong>Applications in Progress:</strong> 2</p>
-          <p><strong>Profile Completion:</strong> 85%</p>
-          <div class="w-full bg-gray-200 rounded h-2 mt-2">
-            <div class="bg-green-500 h-2 rounded" style="width: 85%;"></div>
-          </div>
-        </div>
+  <nav class="bg-blue-700 text-white p-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-lg font-bold">StudentRecruit.io</h1>
+      <div class="space-x-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="search.html" class="hover:underline">Search</a>
+        <a href="apply.html" class="hover:underline">Apply</a>
+        <a href="dashboardaa.html" class="hover:underline">Dashboard</a>
       </div>
-    </section>
-
-    <!-- Saved Programs -->
-    <section class="bg-white rounded shadow p-6">
-      <h2 class="text-xl font-semibold mb-4">📌 Saved Programs</h2>
-      <div class="grid md:grid-cols-2 gap-4">
-        <div class="p-4 border rounded bg-gray-50">
-          <h3 class="font-semibold">MSc in Data Science</h3>
-          <p class="text-sm text-gray-600">University of Toronto – 2 years, $25,000/year</p>
-          <a href="apply.html" class="text-blue-600 text-sm mt-2 inline-block hover:underline">Continue Application</a>
-        </div>
-        <div class="p-4 border rounded bg-gray-50">
-          <h3 class="font-semibold">MBA – Oxford University</h3>
-          <p class="text-sm text-gray-600">1 year, $40,000 total, English</p>
-          <a href="apply.html" class="text-blue-600 text-sm mt-2 inline-block hover:underline">Continue Application</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Application Tracker -->
-    <section class="bg-white rounded shadow p-6">
-      <h2 class="text-xl font-semibold mb-4">📋 My Applications</h2>
-      <table class="w-full text-sm table-auto">
-        <thead>
-          <tr class="bg-gray-200">
-            <th class="p-2 text-left">Program</th>
-            <th class="p-2 text-left">University</th>
-            <th class="p-2 text-left">Status</th>
-            <th class="p-2 text-left">Updated</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b">
-            <td class="p-2">MSc in Data Science</td>
-            <td class="p-2">University of Toronto</td>
-            <td class="p-2 text-green-600">Under Review</td>
-            <td class="p-2">May 6, 2025</td>
-          </tr>
-          <tr class="border-b">
-            <td class="p-2">MBA</td>
-            <td class="p-2">Oxford University</td>
-            <td class="p-2 text-yellow-600">Documents Pending</td>
-            <td class="p-2">May 2, 2025</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Notifications -->
-    <section class="bg-white rounded shadow p-6">
-      <h2 class="text-xl font-semibold mb-4">🔔 Notifications</h2>
-      <ul class="list-disc list-inside text-sm space-y-2 text-gray-700">
-        <li>Submit your IELTS certificate for Oxford MBA by <strong>May 15</strong>.</li>
-        <li>Your Data Science application was forwarded to the admissions committee.</li>
-      </ul>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
-    <p>&copy; 2025 StudentRecruit.io – All Rights Reserved</p>
-  </footer>
-
+    </div>
+  </nav>
+  <section class="max-w-6xl mx-auto p-6 space-y-10">
+    <h2 class="text-2xl font-bold mb-4">Welcome, Aisha 👋</h2>
+    <div class="bg-white p-6 rounded shadow">
+      <p><strong>Applications:</strong> 2 in progress</p>
+      <p><strong>Profile:</strong> 85% Complete</p>
+      <p class="text-sm text-gray-500 mt-2">Submit IELTS for MBA before May 15.</p>
+    </div>
+  </section>
 </body>
 </html>
