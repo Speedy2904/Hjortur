@@ -1,0 +1,64 @@
+import React, { useState } from "react";
+
+export default function LoginPage() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  return (
+    <div className={`${darkMode ? "bg-gray-900" : "bg-gray-100"} min-h-screen flex items-center justify-center p-6 transition-colors duration-500`}>
+      <div className={`${darkMode ? "bg-gray-800 text-white" : "bg-white text-gray-800"} w-full max-w-md p-10 rounded-2xl shadow-2xl transition-colors duration-500`}>
+        <h2 className="text-4xl font-extrabold text-center mb-3">Welcome to Zizera</h2>
+        <p className="text-center text-gray-500 dark:text-gray-400 mb-8">Welcome back! Please enter your details</p>
+
+        <form className="space-y-6">
+          <div>
+            <label className="block text-sm font-semibold mb-2">Email Address</label>
+            <input
+              type="email"
+              placeholder="Email address goes here"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-semibold mb-2">Password</label>
+            <input
+              type="password"
+              placeholder="••••••••"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+            />
+            <div className="text-right mt-2">
+              <a href="#" className="text-sm text-blue-500 hover:underline">Forgot password?</a>
+            </div>
+          </div>
+
+          <div className="flex items-center">
+            <input type="checkbox" id="terms" className="mr-2" />
+            <label htmlFor="terms" className="text-sm text-gray-600 dark:text-gray-300">
+              I agree to the <a href="#" className="text-blue-500 hover:underline">Terms & Conditions</a>
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-indigo-700 transition duration-300 shadow-lg"
+          >
+            Log In
+          </button>
+        </form>
+
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="text-xs text-gray-500 dark:text-gray-400 hover:underline"
+          >
+            {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          </button>
+        </div>
+
+        <div className="mt-8 text-center text-gray-400 text-xs">
+          © 2025 EYJA. All rights reserved.
+        </div>
+      </div>
+    </div>
+  );
+}
